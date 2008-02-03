@@ -1,25 +1,13 @@
 <?php
 error_reporting(E_ALL);
-function convSecondes($sec) {
-	if ($sec == 0) {
-		return "00:00:00";
-	} else {
-		return sprintf("%d jour%s, %02d:%02d:%02d", $sec/86400,intval($sec/86400)==1?"":"s", ($sec%86400)/3600,($sec%3600)/60,$sec%60);
-	}
-}
 
-function error_sql($error) {
-	echo "\nPDO::errorInfo():<br/>\n";
-	print_r($error);
-	die;
-}
+require 'includes/functions.php';
+require 'includes/ew_config.php';
 
-$dbhost = "localhost";
-$dbuser = "eirpg";
-$dbpass = "pass";
-$dbname = "eirpg";
+$ew_config = new ew_config(require 'config.inc.php');
+$eb_config = new ew_config(parse_ini_file($ew_config->config_file,true));
 
-$db = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+$db = new PDO('mysql:host='.$config->mysqldata->dbhost'.;dbname='.$config->mysqldata->dbname, $config->mysqldata->dbuser, $config->mysqldata->dbpass);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
