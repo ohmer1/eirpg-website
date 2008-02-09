@@ -9,11 +9,17 @@ function getInfoByPerso ($perso) {
 	global $db;
 	$query = "SELECT p.* FROM Personnages as p WHERE p.Nom = :Nom";
 	$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+	if (!$sth) {
+		error_sql($db->errorInfo());
+	}
 	$sth->execute(array(':Nom'=>$perso));
 	$result = $sth->fetch(PDO::FETCH_ASSOC);
 	if ($result) {
 		$query = "SELECT Nick, UserHost FROM IRC WHERE Pers_Id = :Perso_id";
 		$st = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+		if (!$st) {
+			error_sql($db->errorInfo());
+		}
 		$st->execute(array('Perso_id'=>$result['Id_Personnages']));
 		$r2 = $st->fetch(PDO::FETCH_ASSOC);
 		if ($r2)
@@ -36,8 +42,8 @@ if ($pid === false) {
 <p>
 <?php
 printf("\tPrésence irc: %s<br />\n",$info['Nick'].'!'.$info['UserHost']);
-printf("\tNom du personnage: %s<br />\n",$info['Nom']);
-printf("\tClasse: %s<br />\n",$info['Class']);
+printf("\tNom du personnage: %s<br />\n",utf8_encode($info['Nom']));
+printf("\tClasse: %s<br />\n",utf8_encode($info['Class']));
 printf("\tNiveau: %s<br />\n",$info['Level']);
 printf("\tNiveau suivant: %s<br />\n",convSecondes($info["Next"]));
 printf("\tCréé le: %s<br />\n",$info['Created']);
@@ -50,13 +56,16 @@ printf("\tIdle pendant: %s\n<br />",convSecondes($info['Idled']));
 <?php
 $query = "SELECT o.LObj_Id, o.Level, lo.Name, lo.EstUnique FROM Objets as o, ListeObjets as lo WHERE o.Pers_Id=:Perso_id AND lo.Id_ListeObjets = o.LObj_Id";
 $sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+if (!$sth) {
+	error_sql($db->errorInfo());
+}
 $sth->execute(array(':Perso_id'=>$pid));
 $allObj = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <h2>Liste des objets de <?php echo $_GET['Nom'] ?></h2>
 <div id="obj_list">
-<p>Nombre d'objets = <?php echo count($allObj) ?></p>
+<p>Nombre d'objets : <?php echo count($allObj) ?></p>
 <ul>
 <?php
 $total = 0;
@@ -68,7 +77,7 @@ foreach($allObj as $objet) {
 ?>
 </ul>
 <p>
-Total : <?php echo $total ?>
+Puissance cumulée : <?php echo $total ?>
 </p>
 </div>
 

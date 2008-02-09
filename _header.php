@@ -8,6 +8,12 @@ function convSecondes($sec) {
 	}
 }
 
+function error_sql($error) {
+	echo "\nPDO::errorInfo():<br/>\n";
+	print_r($error);
+	die;
+}
+
 $dbhost = "localhost";
 $dbuser = "eirpg";
 $dbpass = "pass";
