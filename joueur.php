@@ -5,31 +5,6 @@ if (!isset($_GET['Nom']) || empty($_GET['Nom'])) {
 $title = 'Information du joueur '.$_GET['Nom'];
 require('_header.php');
 
-function getInfoByPerso ($perso) {
-	global $db;
-	$query = "SELECT p.* FROM Personnages as p WHERE p.Nom = :Nom";
-	$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
-	if (!$sth) {
-		error_sql($db->errorInfo());
-	}
-	$sth->execute(array(':Nom'=>$perso));
-	$result = $sth->fetch(PDO::FETCH_ASSOC);
-	if ($result) {
-		$query = "SELECT Nick, UserHost FROM IRC WHERE Pers_Id = :Perso_id";
-		$st = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
-		if (!$st) {
-			error_sql($db->errorInfo());
-		}
-		$st->execute(array('Perso_id'=>$result['Id_Personnages']));
-		$r2 = $st->fetch(PDO::FETCH_ASSOC);
-		if ($r2)
-			$result = array_merge($result,$r2);
-		else
-			$result = array_merge($result,array('Nick'=>'<strong>&lt;&lt;offline&gt;&gt;</strong>','UserHost'=>''));
-	}
-	return $result;
-}
-
 $info = getInfoByPerso($_GET['Nom']);
 $pid = $info['Id_Personnages'];
 if ($pid === false) {

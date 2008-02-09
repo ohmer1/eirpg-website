@@ -6,7 +6,7 @@ require 'includes/ew_config.php';
 
 $eb_config = new ew_config(parse_ini_file("/home/xrogaan/EIRPG-6.0/irpg.conf",true));
 
-$db = new PDO('mysql:host='.$eb_config->SQL->host'.;dbname='.$eb_config->SQL->base, $eb_config->SQL->login, $eb_config->SQL->password);
+$db = new PDO('mysql:host='.$eb_config->SQL->host.';dbname='.$eb_config->SQL->base, $eb_config->SQL->login, $eb_config->SQL->password);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
