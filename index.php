@@ -93,8 +93,9 @@ Lorsque que vous effectuez une action autre qu'IDLE, comme par exemple partir du
 Les formules sont les suivantes :
 
 
-| Changer de pseudonyme  | Pénalité désactivée              |
+| Action                 | Pénalité                         |
 | ---------------------- | --------------------------------:|
+| Changer de pseudonyme  | Pénalité désactivée              |
 | Partir du canal        | `200*(1.14ˆNIVEAU)`              |
 | Quitter le serveur IRC | `30*(1.14ˆNIVEAU)`               |
 | Se déconnecter du bot  | `20*(1.14ˆNIVEAU)`               |
@@ -109,7 +110,8 @@ Les pénalités sont abrégées sous cette forme : `p[num]`. Par exemple, un dé
 
 </div>
 EOF;
-echo MarkDown($text);
+
+echo MarkDown(str_replace('1.14^',$eb_config->mod_penalites->expPenalite.'^',$text));
 
 require('_footer.php');
 ?>

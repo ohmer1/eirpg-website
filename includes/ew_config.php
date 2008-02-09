@@ -1,13 +1,13 @@
 <?php
 
-class ew_config extends Countable {
+class ew_config implements Countable {
 	protected $_allow_modification;
 	protected $_data;
 	protected $_count;
 	
 	function __construct($array,$allow_modification=null) {
 		$this->_allow_modification = (boolean) $allow_modification;
-		foreach ($source as $key => $value) {
+		foreach ($array as $key => $value) {
 			if (is_array($value)) {
 				$this->_data[$key] = new ew_config($value);
 			} else {

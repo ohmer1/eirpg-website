@@ -39,4 +39,38 @@ function getInfoByPerso ($perso) {
 	return $result;
 }
 
+class paginator {
+
+	public $limit_by_page=10;
+	public $elements=0;
+	public $page_variable="p";
+	public $current_page=1;
+	public $number_of_pages;
+	
+	function get_sql_limit_statement() {
+		$max = $this->current_page*$this->limit_by_page;
+		$min = $max-$this->limit_by_page;
+		return "LIMIT $min, $max";
+	}
+
+	function paginate($pageurl) {
+		$this->number_of_pages = ceil($this->elements / $this->limit_by_page);
+		if ($number_of_pages == 1) {
+			return "Page : 1.";
+		} else {
+			$i=1;
+			$txt = '&lt; <a href="'.$pageurl.'?'.$paginate_var.($current_page-1).'">précédent</a> | ';
+			while($i < $number_of_pages) {
+				if ($i == $current_page) {
+					$txt.= "page $i, ";
+				} else {
+					$txt.= '<a href="'.$pageurl.'?'.$paginate_var.$i.'" class="paginator">page '.$i.'</a>, ';
+				}
+				$i++;
+			}
+			return substr($txt,0,-2).'.';
+		}
+	}
+
+}
 ?>
