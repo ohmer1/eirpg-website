@@ -11,7 +11,7 @@ $ew_config->merge($eb_config);
 
 unset($eb_config);
 
-//$db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->base, $ew_config->SQL->login, $ew_config->SQL->password);
+$db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->base, $ew_config->SQL->login, $ew_config->SQL->password);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -104,7 +104,7 @@ unset($eb_config);
 	/* ]]> */
 	</style>
 	
-	<base href="http://xrogaan.oh-my-songs.com/irpg/" />
+	<base href="<?php echo $ew_config->baseurl ?>" />
 </head>
 <body>
 <div id="menu-top">
