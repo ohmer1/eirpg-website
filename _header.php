@@ -10,7 +10,7 @@ $eb_config = new ew_config(parse_ini_file($ew_config->config_file,true));
 $ew_config->merge($eb_config);
 unset($eb_config);
 
-$db = new PDO('mysql:host='.$eb_config->SQL->host.';dbname='.$eb_config->SQL->base, $eb_config->SQL->login, $eb_config->SQL->password);
+$db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->base, $ew_config->SQL->login, $ew_config->SQL->password);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
