@@ -1,15 +1,45 @@
 <?php
+/**
+ * @category EW
+ * @package Ew_Config
+ * @copyright Copyright (c) 2008, Bellière Ludovic
+ * @license http://opensource.org/licenses/mit-license.php MIT license
+ */
 
+/**
+ * @author Bellière Ludovic
+ * @category EW
+ * @package Ew_Config
+ * @copyright Copyright (c) 2008, Bellière Ludovic
+ * @license http://opensource.org/licenses/mit-license.php MIT license
+ */
 class ew_config implements Countable {
+	/**
+	 * Allow the modification in-memory
+	 *
+	 * @var boolean
+	 */
 	protected $_allow_modification;
+
+	/**
+	 * The array configuration data
+	 *
+	 * @var array
+	 */
 	protected $_data;
+
+	/**
+	 * Number of elements
+	 *
+	 * @var interger
+	 */
 	protected $_count;
 	
-	function __construct($array,$allow_modification=null) {
+	function __construct($array,$allow_modification=false) {
 		$this->_allow_modification = (boolean) $allow_modification;
 		foreach ($array as $key => $value) {
 			if (is_array($value)) {
-				$this->_data[$key] = new ew_config($value);
+				$this->_data[$key] = new ew_config($value, $this->_allow_modification);
 			} else {
 				$this->_data[$key] = $value;
 			}
@@ -44,8 +74,28 @@ class ew_config implements Countable {
 		return isset($this->_data[$name]);
 	}
 	
+	/**
+	 * Defined by Countable interface
+	 *
+	 * @return int
+	 */
 	public function count() {
 		return $this->_count;
+	}
+
+	public function merge(ew_config $merge) {
+		foreach ($merge as $key -> $value) {
+			if(array_key_exists($key, $this->_data)) {
+				if ($value instanceof ew_config && $this->$key instanceof ew_config) {
+					$this->$key = $this->$key->merge($value);
+				} else {
+					$this->$key = $value;
+				}
+			} else {
+				$this->$key = $value;
+			}
+		}
+		return $this;
 	}
 }
 

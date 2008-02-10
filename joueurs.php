@@ -14,7 +14,7 @@ $ft = $db->query($sql);
 $num = $ft->fetch(PDO::FETCH_ASSOC);
 $pages = new ew_paginate($num['elems']);
 
-echo "<p>".$pages->paginate('joueurs.php');."</p>";
+echo "<p>".$pages->paginate('joueurs.php')."</p>";
 echo "<ul>\n";
 $query = "SELECT Nom, Class, Level, Next FROM Personnages ORDER BY Id_Personnages ASC ".$pages->get_sql_limit_statement();
 foreach ($db->query($query) as $row) {

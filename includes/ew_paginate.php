@@ -1,5 +1,18 @@
 <?php
+/**
+ * @category EW
+ * @package Ew_Paginate
+ * @copyright Copyright (c) 2008, Bellière Ludovic
+ * @license http://opensource.org/licenses/mit-license.php MIT license
+ */
 
+/**
+ * @author Bellière Ludovic
+ * @category EW
+ * @package Ew_Paginate
+ * @copyright Copyright (c) 2008, Bellière Ludovic
+ * @license http://opensource.org/licenses/mit-license.php MIT license
+ */
 class ew_paginate {
 
 	/**

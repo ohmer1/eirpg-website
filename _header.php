@@ -4,7 +4,11 @@ error_reporting(E_ALL);
 require 'includes/functions.php';
 require 'includes/ew_config.php';
 
-$eb_config = new ew_config(parse_ini_file("/home/xrogaan/EIRPG-6.0/irpg.conf",true));
+$ew_config = new ew_config(return 'config.inc.php');
+$eb_config = new ew_config(parse_ini_file($ew_config->config_file,true));
+
+$ew_config->merge($eb_config);
+unset($eb_config);
 
 $db = new PDO('mysql:host='.$eb_config->SQL->host.';dbname='.$eb_config->SQL->base, $eb_config->SQL->login, $eb_config->SQL->password);
 

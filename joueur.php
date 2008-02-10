@@ -30,7 +30,7 @@ printf("\tIdle pendant: %s\n<br />",convSecondes($info['Idled']));
 
 <?php
 $query = "SELECT o.LObj_Id, o.Level, lo.Name, lo.EstUnique FROM Objets as o, ListeObjets as lo WHERE o.Pers_Id=:Perso_id AND lo.Id_ListeObjets = o.LObj_Id";
-$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
+$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY, PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => TRUE));
 if (!$sth) {
 	error_sql($db->errorInfo());
 }
