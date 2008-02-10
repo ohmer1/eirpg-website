@@ -39,7 +39,7 @@ function p_row($explain,$value,$iscode=false) {
 <?php
 $basetab = 2;
 echo p_row('Maitre du bot',$ew_config->IRPG->admin);
-echo p_row('Purge',$ew_config->IRPG->purge);
+echo p_row('Purge',$ew_config->IRPG->purge.' jours');
 echo p_row('Version',$ew_config->IRPG->version);
 ?>
 	
@@ -74,10 +74,10 @@ echo p_row('Calcul du temps d\'idle', ''.$ew_config->mod_idle->idleBase.'*'.$ew_
 <?php
 
 echo p_row('Pénalité privmsg', '('.
-		$ew_config->mod_penalites->penPrivmsg.'*strlen(MSG)) * ('.
+		$ew_config->mod_penalites->penPrivmsg.'*Longueur du message) * ('.
 		$ew_config->mod_penalites->expPenalite.'^level)',true);
 echo p_row('Pénalité notice', '('.
-		$ew_config->mod_penalites->penNotice.'*strlen(MSG)) * ('.
+		$ew_config->mod_penalites->penNotice.'*Longueur du message) * ('.
 		$ew_config->mod_penalites->expPenalite.'^level)',true);
 echo p_row('Pénalité nick', '('.
 		$ew_config->mod_penalites->penNick.'*('.

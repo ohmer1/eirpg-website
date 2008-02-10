@@ -5,7 +5,7 @@ if (!isset($_GET['Nom']) || empty($_GET['Nom'])) {
 $title = 'Information du joueur '.$_GET['Nom'];
 require('_header.php');
 
-$info = getInfoByPerso($_GET['Nom']);
+$info = getInfoByPerso(urldecode ($_GET['Nom']) );
 $pid = $info['Id_Personnages'];
 if ($pid === false) {
 	die('mauvais retour de getinfo');

@@ -13,12 +13,16 @@ unset($eb_config);
 
 $db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->base, $ew_config->SQL->login, $ew_config->SQL->password);
 
+$db->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
+
+define('EW_GLOBALTITLE',$ew_config->overall_title);
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>EIRPG - <?php echo $title ?></title>
+<title>EW_GLOBALTITLE - <?php echo $title ?></title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="irpg,eirpg,irc,network,rpg" />
 	<style type="text/css" media="screen">
@@ -111,6 +115,7 @@ $db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->ba
 <ul>
 	<li class="premier"><a href="index.php">Accueil</a></li>
 	<li><a href="top10.php">Le top 10</a></li>
+	<li><a href="flop10.php">Le flop 10</a></li>
 	<li><a href="joueurs.php">Liste des joueurs</a></li>
 </ul>
 </div>

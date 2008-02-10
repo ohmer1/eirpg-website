@@ -63,7 +63,7 @@ class ew_paginate {
 		} else {
 			$i=1;
 			$txt = ($this->current_page === 1) ? '' : '&lt; <a href="'.$pageurl.'?'.$this->page_variable.'='.($this->current_page-1).'">précédent</a> | ';
-			while($i <= $this->number_of_pages) {
+			while($i < $this->number_of_pages) {
 				if ($i == $this->current_page) {
 					$txt.= "page $i, ";
 				} else {
@@ -76,9 +76,9 @@ class ew_paginate {
 	}
 	
 	public function get_sql_limit_statement() {
-		$max = $this->current_page*$this->limit_by_page;
-		$min = $max-$this->limit_by_page;
-		return "LIMIT $min, $max";
+		$lines = $this->limit_by_page;
+		$offset = $this->limit_by_page*$this->current_page;
+		return "LIMIT $offset, $lines";
 	}
 	
 	protected function set_current_page() {

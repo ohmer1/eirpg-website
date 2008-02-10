@@ -4,7 +4,7 @@ function convSecondes($sec) {
 	if ($sec == 0) {
 		return "00:00:00";
 	} else {
-		return sprintf("%d jour%s, %02d:%02d:%02d", $sec/86400,intval($sec/86400)<=1?"":"s", ($sec%86400)/3600,($sec%3600)/60,$sec%60);
+		return sprintf("%d jour%s, %02d:%02d:%02d", $sec/86400,intval($sec/86400)==1?"":"s", ($sec%86400)/3600,($sec%3600)/60,$sec%60);
 	}
 }
 
@@ -17,7 +17,7 @@ function error_sql($error) {
 function getInfoByPerso ($perso) {
 	global $db;
 	$query = "SELECT p.* FROM Personnages as p WHERE p.Nom = :Nom";
-	$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY, PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => TRUE));
+	$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 	if (!$sth) {
 		error_sql($db->errorInfo());
 	}
@@ -25,7 +25,7 @@ function getInfoByPerso ($perso) {
 	$result = $sth->fetch(PDO::FETCH_ASSOC);
 	if ($result) {
 		$query = "SELECT Nick, UserHost FROM IRC WHERE Pers_Id = :Perso_id";
-		$st = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY, PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => TRUE));
+		$st = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 		if (!$st) {
 			error_sql($db->errorInfo());
 		}
