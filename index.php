@@ -103,11 +103,11 @@ Les formules sont les suivantes :
 | Notice sur le canal    | `LONGUEUR_MESSAGE*(1.14ˆNIVEAU)` |
 | Être kické du canal    | `250*(1.14ˆNIVEAU)`              |
 
-
 Par exemple, si vous avez un personnage de niveau 30 et que vous partez du canal, il sera pénalisé de 10190 secondes pour atteindre son prochain niveau.
 
 Les pénalités sont abrégées sous cette forme : `p[num]`. Par exemple, un départ du canal équivaut à une p200. Les messages et les notices sont marqués : `p[num]*[longueur du message]`.
 
+Plus de détails sur la [configuration](show_config.php).
 </div>
 EOF;
 
