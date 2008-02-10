@@ -82,6 +82,19 @@ class ew_config implements Countable, Iterator {
 	protected function __isset($name) {
 		return isset($this->_data[$name]);
 	}
+
+	/**
+	 * Support unset() overloading on PHP 5.1
+	 *
+	 * @param string $name
+	 */
+	protected function __unset($name) {
+		if ($this->_allow_modifications) {
+			unset($this->_data[$name]);
+		} else {
+			throw new Exception('Config is read only');
+		}
+	}
 	
 	/**
 	 * Defined by Countable interface
