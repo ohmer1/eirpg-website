@@ -13,7 +13,7 @@
  * @copyright Copyright (c) 2008, Bellière Ludovic
  * @license http://opensource.org/licenses/mit-license.php MIT license
  */
-class ew_config implements Countable {
+class ew_config implements Countable, Iterator {
 	/**
 	 * Allow the modification in-memory
 	 *
@@ -34,6 +34,13 @@ class ew_config implements Countable {
 	 * @var interger
 	 */
 	protected $_count;
+
+	/**
+	 * Iteration index
+	 *
+	 * @var integer
+	 */
+	protected $_index;
 	
 	function __construct($array,$allow_modification=false) {
 		$this->_allow_modification = (boolean) $allow_modification;
@@ -44,6 +51,8 @@ class ew_config implements Countable {
 				$this->_data[$key] = $value;
 			}
 		}
+
+		$this->_count = count($this->_data);
 	}
 	
 	function get($key,$default=false) {
@@ -83,8 +92,53 @@ class ew_config implements Countable {
 		return $this->_count;
 	}
 
+	/**
+	 * Defined by Iterator interface
+	 *
+	 * @return mixed
+	 */
+	public function current() {
+		return current($this->_data);
+	}
+
+	/**
+	 * Defined by Iterator interface
+	 *
+	 * @return mixed
+	 */
+	public function key() {
+		return key($this->_data);
+	}
+
+	/**
+	 * Defined by Iterator interface
+	 *
+	 */
+	public function next() {
+		next($this->_data);
+		$this->_index++;
+	}
+
+	/**
+	 * Defined by Iterator interface
+	 *
+	 */
+	public function rewind() {
+		reset($this->_data);
+		$this->_index = 0;
+	}
+
+	/**
+	 * Defined by Iterator interface
+	 *
+	 * @return boolean
+	 */
+	public function valid() {
+		return $this->_index < $this->_count;
+	}
+
 	public function merge(ew_config $merge) {
-		foreach ($merge as $key -> $value) {
+		foreach ($merge as $key => $value) {
 			if(array_key_exists($key, $this->_data)) {
 				if ($value instanceof ew_config && $this->$key instanceof ew_config) {
 					$this->$key = $this->$key->merge($value);

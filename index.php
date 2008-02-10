@@ -111,7 +111,7 @@ Les pénalités sont abrégées sous cette forme : `p[num]`. Par exemple, un dé
 </div>
 EOF;
 
-echo MarkDown(str_replace('1.14^',$eb_config->mod_penalites->expPenalite.'^',$text));
+echo MarkDown(str_replace('1.14^',$ew_config->mod_penalites->expPenalite.'^',$text));
 
 require('_footer.php');
 ?>

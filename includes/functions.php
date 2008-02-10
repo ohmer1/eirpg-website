@@ -4,7 +4,7 @@ function convSecondes($sec) {
 	if ($sec == 0) {
 		return "00:00:00";
 	} else {
-		return sprintf("%d jour%s, %02d:%02d:%02d", $sec/86400,intval($sec/86400)==1?"":"s", ($sec%86400)/3600,($sec%3600)/60,$sec%60);
+		return sprintf("%d jour%s, %02d:%02d:%02d", $sec/86400,intval($sec/86400)<=1?"":"s", ($sec%86400)/3600,($sec%3600)/60,$sec%60);
 	}
 }
 
