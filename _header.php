@@ -22,7 +22,7 @@ define('EW_GLOBALTITLE',$ew_config->overall_title);
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>EW_GLOBALTITLE - <?php echo $title ?></title>
+<title><?php echo EW_GLOBALTITLE ?> - <?php echo $title ?></title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="irpg,eirpg,irc,network,rpg" />
 	<style type="text/css" media="screen">

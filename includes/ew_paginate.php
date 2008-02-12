@@ -77,7 +77,7 @@ class ew_paginate {
 	
 	public function get_sql_limit_statement() {
 		$lines = $this->limit_by_page;
-		$offset = $this->limit_by_page*$this->current_page;
+		$offset = $this->limit_by_page*($this->current_page-1);
 		return "LIMIT $offset, $lines";
 	}
 	
