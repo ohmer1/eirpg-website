@@ -1,6 +1,6 @@
 <?php
 $title = "Show config";
-require('_header.php');
+require 'templates/header.tpl.php';
 
 function p_row($explain,$value,$iscode=false) {
 	global $basetab;
@@ -42,7 +42,7 @@ echo p_row('Maitre du bot',$ew_config->IRPG->admin);
 echo p_row('Purge',$ew_config->IRPG->purge.' jours');
 echo p_row('Version',$ew_config->IRPG->version);
 ?>
-	
+
 	<div class="spacer">&nbsp;</div>
 	</div>
 	<div class="rowset">
@@ -53,13 +53,13 @@ echo p_row('Max de perso par user', $ew_config->mod_core->maxPerso);
 echo p_row('Penalité au logout', $ew_config->mod_core->penLogout.'*('.$ew_config->mod_core->expPenalite.'^level)',true);
 
 ?>
-	
+
 	<div class="spacer">&nbsp;</div>
 	</div>
 	<div class="rowset">
 	<h2>Détails sur mod_idle</h2>
 	<p>Module qui calcul l'idle des joueurs.</p>
-	
+
 <?php
 
 echo p_row('Calcul du temps d\'idle', ''.$ew_config->mod_idle->idleBase.'*'.$ew_config->mod_idle->expLvlUp.'^level',true);
@@ -70,7 +70,7 @@ echo p_row('Calcul du temps d\'idle', ''.$ew_config->mod_idle->idleBase.'*'.$ew_
 	<div class="rowset">
 	<h2>Détails sur mod_penalites</h2>
 	<p>Module qui gère les pénalités à appliquer</p>
-	
+
 <?php
 
 echo p_row('Pénalité privmsg', '('.
@@ -95,11 +95,11 @@ echo p_row('Pénalité kick', '('.
 ?>
 		<div class="spacer">&nbsp;</div>
 	</div>
-	
+
 	<div class="rowset">
 	<h2>Détails sur mod_ohvstatus</h2>
 	<p>Ce module gère les modes à appliquer aux utilisateurs selon leur niveau dans le jeu.</p>
-	
+
 <?php
 
 echo p_row('Status du mode Op', (($ew_config->mod_ohvstatus->op == 1) ? 'Actif':'Désactivé'));
@@ -112,11 +112,11 @@ echo p_row('Niveau requis pour être Voice', $ew_config->mod_ohvstatus->voicelvl
 ?>
 		<div class="spacer">&nbsp;</div>
 	</div>
-	
+
 	<div class="rowset">
 	<h2>Détails sur mod_quests</h2>
 	<p>Ce module gère les quêtes.</p>
-	
+
 <?php
 /*
 [mod_quests]
@@ -167,5 +167,5 @@ echo p_row('Probabilité qu\'une <acronym title="Quete d\'Aventure">QA</acronym>
 	</div>
 </div>
 <?php
-require('_footer.php');
+require 'templates/footer.tpl.php';
 ?>

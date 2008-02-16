@@ -1,6 +1,6 @@
 <?php
 $title = "Accueil";
-require('_header.php');
+require 'templates/header.tpl.php';
 require('MarkDown/markdown.php');
 $text = <<<EOF
 # Accueil
@@ -17,7 +17,7 @@ Cette commande vous permet de créer un compte. Tout les caractères - ou presqu
 
 __C'est cette commande que vous devrez faire en tout premier avant de pouvoir créer un personnage !__
 
-### Création d'un personnage 
+### Création d'un personnage
 
 	/msg IRPG CREATE <nom_du_personnage> <classe>
 
@@ -25,7 +25,7 @@ Cette commande vous permet cette fois-ci de créer un personnage. Comme précéd
 Vous devez impérativement être déjà connecté à votre compte avant de pouvoir créer un personnage. (Voir commande ci-dessous.)
 
 ## Maintenant, vous êtes prêt à débuter !
-### Se connecter à un compte 
+### Se connecter à un compte
 
 	/msg IRPG LOGIN <utilisateur> <mot_de_passe>
 
@@ -33,7 +33,7 @@ Comme vous l'aurez deviné au titre, cette commande permet de se connecter à un
 
 *Cette commande ne vous inflige pas de pénalité.*
 
-### Se déconnecter du bot 
+### Se déconnecter du bot
 
 	/msg IRPG LOGOUT
 
@@ -42,7 +42,7 @@ Là aussi, rien de très compliqué, cette commande déconnecte tous vos personn
 *Cette commande inflige à tous vos personnages une pénalité __p20__.*
 
 
-### Méthode d'avertissement 
+### Méthode d'avertissement
 
 	/msg IRPG NOTICE <on/off>
 
@@ -52,7 +52,7 @@ Par défaut, le bot vous avertit par notice
 *Cette commande ne vous inflige pas de pénalité.*
 
 
-### Informations sur votre compte et vos personnages 
+### Informations sur votre compte et vos personnages
 
 	/msg IRPG WHOAMI
 
@@ -61,7 +61,7 @@ Cette commande va vous donner diverses informations tel que le compte sur lequel
 *Cette commande ne vous inflige pas de pénalité.*
 
 
-### Objets de vos personnages 
+### Objets de vos personnages
 
 	/msg IRPG ITEMS [personnage]
 
@@ -70,7 +70,7 @@ Cette commande va vous indiquer tous les objets que porte actuellement le person
 *Cette commande ne vous inflige pas de pénalité.*
 
 
-### Obtenir son grade (voice, halfop, op) 
+### Obtenir son grade (voice, halfop, op)
 
 	/msg IRPG UP
 
@@ -79,7 +79,7 @@ Cette commande vous mets votre grade : voice, halfop ou op suivant votre niveau.
 *Cette commande ne vous inflige pas de pénalité.*
 
 
-### Connaître l'état du mode Bonus 
+### Connaître l'état du mode Bonus
 
 	/msg IRPG BONUS
 
@@ -113,5 +113,5 @@ EOF;
 
 echo MarkDown(str_replace('1.14^',$ew_config->mod_penalites->expPenalite.'^',$text));
 
-require('_footer.php');
+require 'templates/footer.tpl.php';
 ?>

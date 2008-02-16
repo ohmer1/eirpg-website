@@ -3,7 +3,7 @@ if (!isset($_GET['Nom']) || empty($_GET['Nom'])) {
 	die('tatata');
 }
 $title = 'Information du joueur '.$_GET['Nom'];
-require('_header.php');
+require 'templates/header.tpl.php';
 
 $info = getInfoByPerso(urldecode ($_GET['Nom']) );
 $pid = $info['Id_Personnages'];
@@ -57,5 +57,5 @@ Puissance cumulée : <?php echo $total ?>
 </div>
 
 <?php
-require '_footer.php';
+require 'templates/footer.tpl.php';
 ?>
