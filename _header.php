@@ -1,22 +1,5 @@
 <?php
-error_reporting(E_ALL);
-
-require 'includes/functions.php';
-require 'includes/ew_config.php';
-
-$ew_config = new ew_config(require 'config.inc.php',true);
-$eb_config = new ew_config(parse_ini_file($ew_config->config_file,true));
-
-$ew_config->merge($eb_config);
-
-unset($eb_config);
-
-$db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->base, $ew_config->SQL->login, $ew_config->SQL->password);
-
-$db->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
-
-define('EW_GLOBALTITLE',$ew_config->overall_title);
-
+    require_once '_init.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -105,6 +88,23 @@ define('EW_GLOBALTITLE',$ew_config->overall_title);
 	}
 	
 	form div.spacer { clear: both; }
+
+	table.ListePerso {
+		width: 800px;
+	}
+	table.ListePerso td, table.ListePerso th {
+		padding: 0 10px;
+		border: 1px #CCC solid;
+		text-align: center;
+	}
+
+       a.arrow { text-decoration: none; }
+
+	a.small {
+		color: #999;
+		font-size: small;
+		text-decoration: none;
+	}
 	/* ]]> */
 	</style>
 	
@@ -114,8 +114,8 @@ define('EW_GLOBALTITLE',$ew_config->overall_title);
 <div id="menu-top">
 <ul>
 	<li class="premier"><a href="index.php">Accueil</a></li>
-	<li><a href="top10.php">Le top 10</a></li>
-	<li><a href="flop10.php">Le flop 10</a></li>
-	<li><a href="joueurs.php">Liste des joueurs</a></li>
+	<li><a href="classement.php?top=10">Le top 10</a></li>
+	<li><a href="classement.php?flop=10">Le flop 10</a></li>
+	<li><a href="classement.php">Classement des personnages</a></li>
 </ul>
 </div>

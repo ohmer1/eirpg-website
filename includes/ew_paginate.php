@@ -61,17 +61,18 @@ class ew_paginate {
 		if ($this->number_of_pages == 1) {
 			return "Page : 1.";
 		} else {
+                     $pageurl = strpos($pageurl, '?') ? $pageurl.'&amp;' : $pageurl.'?';
 			$i=1;
-			$txt = ($this->current_page === 1) ? '' : '&lt; <a href="'.$pageurl.'?'.$this->page_variable.'='.($this->current_page-1).'">précédent</a> | ';
+			$txt = ($this->current_page === 1) ? '' : '&lt; <a href="'.$pageurl.$this->page_variable.'='.($this->current_page-1).'">précédent</a> | ';
 			while($i < $this->number_of_pages) {
 				if ($i == $this->current_page) {
 					$txt.= "page $i, ";
 				} else {
-					$txt.= '<a href="'.$pageurl.'?'.$this->page_variable.'='.$i.'" class="paginator">page '.$i.'</a>, ';
+					$txt.= '<a href="'.$pageurl.$this->page_variable.'='.$i.'" class="paginator">page '.$i.'</a>, ';
 				}
 				$i++;
 			}
-			return substr($txt,0,-2).(($this->number_of_pages > $this->current_page) ? ' | <a href="'.$pageurl.'?'.$this->page_variable.'='.($this->current_page+1).'">Suivant</a> &gt; ':'').'.';
+			return substr($txt,0,-2).(($this->number_of_pages > $this->current_page) ? ' | <a href="'.$pageurl.$this->page_variable.'='.($this->current_page+1).'">Suivant</a> &gt; ':'').'.';
 		}
 	}
 	
