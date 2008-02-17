@@ -1,5 +1,6 @@
 <?php
 $title = "Show config";
+require 'includes/prepend.php';
 require 'templates/header.tpl.php';
 
 function p_row($explain,$value,$iscode=false) {
@@ -118,12 +119,7 @@ echo p_row('Niveau requis pour être Voice', $ew_config->mod_ohvstatus->voicelvl
 	<p>Ce module gère les quêtes.</p>
 
 <?php
-/*
-[mod_quests]
 
-probaAllQuete = "500"	;Probabilité qu'une quete se declare toutes les 15 secondes. ex: 1 chance sur 500 qu'une quete se declare.
-probaQueteA = "80"		;Probabilité en % qu'une quete aventure se declare. ex.: 80% de chance qu'un quete aventure se declare et 20% une quete royaume
-*/
 echo p_row('Temps min. d\'une <acronym title="Quete d\'Aventure">QA</acronym>',
 		convSecondes($ew_config->mod_quests->tempsQueteA));
 echo p_row('Temps min. d\'une <acronym title="Quete de Royaume">QR</acronym>',

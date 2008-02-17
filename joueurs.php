@@ -1,8 +1,9 @@
 <?php
 $title = 'Liste des joueurs';
 
+require 'includes/prepend.php';
 require 'templates/header.tpl.php';
-require('includes/ew_paginate.php');
+require 'includes/ew_paginate.php';
 
 ?>
 <h1>Liste des joueurs</h1>

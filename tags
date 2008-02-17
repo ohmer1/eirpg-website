@@ -1,0 +1,500 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+EW_GLOBALTITLE	_init.php	/^  define('EW_GLOBALTITLE',$ew_config->overall_title);$/;"	d
+MARKDOWNEXTRA_VERSION	MarkDown/markdown.php	/^define( 'MARKDOWNEXTRA_VERSION',  "1.1.7" ); # Wed 26 Sep 2007$/;"	d
+MARKDOWN_VERSION	MarkDown/markdown.php	/^define( 'MARKDOWN_VERSION',  "1.0.1k" ); # Wed 26 Sep 2007$/;"	d
+Markdown	MarkDown/markdown.php	/^function Markdown($text) {$/;"	f
+MarkdownExtra_Parser	MarkDown/markdown.php	/^	function MarkdownExtra_Parser() {$/;"	f
+MarkdownExtra_Parser	MarkDown/markdown.php	/^class MarkdownExtra_Parser extends Markdown_Parser {$/;"	c
+Markdown_Parser	MarkDown/markdown.php	/^	function Markdown_Parser() {$/;"	f
+Markdown_Parser	MarkDown/markdown.php	/^class Markdown_Parser {$/;"	c
+Textile	MarkDown/markdown.php	/^	class Textile {$/;"	c
+TextileRestricted	MarkDown/markdown.php	/^		function TextileRestricted($text, $lite='', $noimage='') {$/;"	f
+TextileThis	MarkDown/markdown.php	/^		function TextileThis($text, $lite='', $encode='') {$/;"	f
+__construct	includes/ew_classement.php	/^      public function __construct($params, $tplList) {$/;"	f
+__construct	includes/ew_config.php	/^	function __construct($array,$allow_modification=false) {$/;"	f
+__construct	includes/ew_paginate.php	/^	public function __construct($elements,$limit_by_page=10) {$/;"	f
+__get	includes/ew_config.php	/^	public function __get($key) {$/;"	f
+__isset	includes/ew_config.php	/^	protected function __isset($name) {$/;"	f
+__set	includes/ew_config.php	/^	public function __set($name,$value) {$/;"	f
+__unset	includes/ew_config.php	/^	protected function __unset($name) {$/;"	f
+_appendFootnotes_callback	MarkDown/markdown.php	/^	function _appendFootnotes_callback($matches) {$/;"	f
+_detab_callback	MarkDown/markdown.php	/^	function _detab_callback($matches) {$/;"	f
+_doAbbreviations_callback	MarkDown/markdown.php	/^	function _doAbbreviations_callback($matches) {$/;"	f
+_doAnchors_inline_callback	MarkDown/markdown.php	/^	function _doAnchors_inline_callback($matches) {$/;"	f
+_doAnchors_reference_callback	MarkDown/markdown.php	/^	function _doAnchors_reference_callback($matches) {$/;"	f
+_doAutoLinks_email_callback	MarkDown/markdown.php	/^	function _doAutoLinks_email_callback($matches) {$/;"	f
+_doAutoLinks_url_callback	MarkDown/markdown.php	/^	function _doAutoLinks_url_callback($matches) {$/;"	f
+_doBlockQuotes_callback	MarkDown/markdown.php	/^	function _doBlockQuotes_callback($matches) {$/;"	f
+_doBlockQuotes_callback2	MarkDown/markdown.php	/^	function _doBlockQuotes_callback2($matches) {$/;"	f
+_doCodeBlocks_callback	MarkDown/markdown.php	/^	function _doCodeBlocks_callback($matches) {$/;"	f
+_doDefLists_callback	MarkDown/markdown.php	/^	function _doDefLists_callback($matches) {$/;"	f
+_doHardBreaks_callback	MarkDown/markdown.php	/^	function _doHardBreaks_callback($matches) {$/;"	f
+_doHeaders_attr	MarkDown/markdown.php	/^	function _doHeaders_attr($attr) {$/;"	f
+_doHeaders_callback_atx	MarkDown/markdown.php	/^	function _doHeaders_callback_atx($matches) {$/;"	f
+_doHeaders_callback_setext	MarkDown/markdown.php	/^	function _doHeaders_callback_setext($matches) {$/;"	f
+_doImages_inline_callback	MarkDown/markdown.php	/^	function _doImages_inline_callback($matches) {$/;"	f
+_doImages_reference_callback	MarkDown/markdown.php	/^	function _doImages_reference_callback($matches) {$/;"	f
+_doItalicAndBold_em_callback	MarkDown/markdown.php	/^	function _doItalicAndBold_em_callback($matches) {$/;"	f
+_doItalicAndBold_strong_callback	MarkDown/markdown.php	/^	function _doItalicAndBold_strong_callback($matches) {$/;"	f
+_doLists_callback	MarkDown/markdown.php	/^	function _doLists_callback($matches) {$/;"	f
+_doTable_callback	MarkDown/markdown.php	/^	function _doTable_callback($matches) {$/;"	f
+_doTable_leadingPipe_callback	MarkDown/markdown.php	/^	function _doTable_leadingPipe_callback($matches) {$/;"	f
+_hashHTMLBlocks_callback	MarkDown/markdown.php	/^	function _hashHTMLBlocks_callback($matches) {$/;"	f
+_hashHTMLBlocks_inHTML	MarkDown/markdown.php	/^	function _hashHTMLBlocks_inHTML($text, $hash_method, $md_attr) {$/;"	f
+_hashHTMLBlocks_inMarkdown	MarkDown/markdown.php	/^	function _hashHTMLBlocks_inMarkdown($text, $indent = 0, $/;"	f
+_initDetab	MarkDown/markdown.php	/^	function _initDetab() {$/;"	f
+_processDefListItems_callback_dd	MarkDown/markdown.php	/^	function _processDefListItems_callback_dd($matches) {$/;"	f
+_processDefListItems_callback_dt	MarkDown/markdown.php	/^	function _processDefListItems_callback_dt($matches) {$/;"	f
+_processListItems_callback	MarkDown/markdown.php	/^	function _processListItems_callback($matches) {$/;"	f
+_stripAbbreviations_callback	MarkDown/markdown.php	/^	function _stripAbbreviations_callback($matches) {$/;"	f
+_stripFootnotes_callback	MarkDown/markdown.php	/^	function _stripFootnotes_callback($matches) {$/;"	f
+_stripLinkDefinitions_callback	MarkDown/markdown.php	/^	function _stripLinkDefinitions_callback($matches) {$/;"	f
+_unhash_callback	MarkDown/markdown.php	/^	function _unhash_callback($matches) {$/;"	f
+abbr	MarkDown/markdown.php	/^		$abbr = $matches[0];$/;"	v
+abbr_desc	MarkDown/markdown.php	/^		$abbr_desc = $matches[2];$/;"	v
+abbr_desciptions	MarkDown/markdown.php	/^	var $abbr_desciptions = array();$/;"	v
+abbr_matches	MarkDown/markdown.php	/^	var $abbr_matches = array();$/;"	v
+abbr_word	MarkDown/markdown.php	/^		$abbr_word = $matches[1];$/;"	v
+addr	MarkDown/markdown.php	/^		$addr = "<a href=\\"$addr\\">$text<\/a>";$/;"	v
+addr	MarkDown/markdown.php	/^		$addr = "mailto:" . $addr;$/;"	v
+addr	MarkDown/markdown.php	/^		$addr = implode('', $chars);$/;"	v
+address	MarkDown/markdown.php	/^		$address = $matches[1];$/;"	v
+allObj	joueur.php	/^$allObj = $sth->fetchAll(PDO::FETCH_ASSOC);$/;"	v
+alt_text	MarkDown/markdown.php	/^		$alt_text		= $matches[2];$/;"	v
+alt_text	MarkDown/markdown.php	/^		$alt_text    = $matches[2];$/;"	v
+alt_text	MarkDown/markdown.php	/^		$alt_text = str_replace('"', '&quot;', $alt_text);$/;"	v
+amount	MarkDown/markdown.php	/^			$amount = $this->tab_width - $/;"	v
+and	MarkDown/markdown.php	/^	# in $text, it pass through this function and is automaticaly escaped, $/;"	f
+appendFootnotes	MarkDown/markdown.php	/^	function appendFootnotes($text) {$/;"	f
+attr	MarkDown/markdown.php	/^			$attr = " rel=\\"footnote\\"";$/;"	v
+attr	MarkDown/markdown.php	/^			$attr = " rev=\\"footnote\\"";$/;"	v
+attr	MarkDown/markdown.php	/^			$attr = str_replace("%%", $num, $attr);$/;"	v
+attr	MarkDown/markdown.php	/^		$attr  = $this->_doHeaders_attr($id =& $matches[2]);$/;"	v
+attr	MarkDown/markdown.php	/^		$attr  = $this->_doHeaders_attr($id =& $matches[3]);$/;"	v
+attr	MarkDown/markdown.php	/^		$attr = '$/;"	v
+attr2	MarkDown/markdown.php	/^				$attr2 = str_replace("%%", ++$num, $attr);$/;"	v
+attribute	MarkDown/markdown.php	/^	# Optional class attribute for footnote links and backlinks.$/;"	c
+attribute	MarkDown/markdown.php	/^# Optional class attribute for footnote links and backlinks.$/;"	c
+auto_close_tags	MarkDown/markdown.php	/^	var $auto_close_tags = 'hr|img';$/;"	v
+backlink	MarkDown/markdown.php	/^				$backlink = "<a href=\\"#fnref:$note_id\\"$attr2>&#8617;<\/a>";$/;"	v
+base_tag_name	MarkDown/markdown.php	/^			$base_tag_name = $matches[1];$/;"	v
+basetab	show_config.php	/^$basetab = 2;$/;"	v
+block	MarkDown/markdown.php	/^				$block = $this->html_hashes[$graf];$/;"	v
+block	MarkDown/markdown.php	/^		$block = "<h$level$attr>".$this->runSpanGamut($matches[1])."<\/h$level>";$/;"	v
+block	MarkDown/markdown.php	/^		$block = "<h$level$attr>".$this->runSpanGamut($matches[2])."<\/h$level>";$/;"	v
+block	MarkDown/markdown.php	/^		$block = "<h$level>".$this->runSpanGamut($matches[1])."<\/h$level>";$/;"	v
+block	MarkDown/markdown.php	/^		$block = "<h$level>".$this->runSpanGamut($matches[2])."<\/h$level>";$/;"	v
+blockLite	MarkDown/markdown.php	/^		function blockLite($text) { return $text; }$/;"	f
+block_gamut	MarkDown/markdown.php	/^	var $block_gamut = array($/;"	v
+block_tag_match	MarkDown/markdown.php	/^		$block_tag_match =$/;"	v
+block_tags	MarkDown/markdown.php	/^	var $block_tags = 'p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|form|fieldset|iframe|hr|legend';$/;"	v
+block_tags_a	MarkDown/markdown.php	/^		$block_tags_a = 'ins|del';$/;"	v
+block_tags_b	MarkDown/markdown.php	/^		$block_tags_b = 'p|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|'.$/;"	v
+block_text	MarkDown/markdown.php	/^						$block_text = preg_replace("\/^[ ]{1,$indent}\/m", "", $/;"	v
+block_text	MarkDown/markdown.php	/^					$block_text = "";$/;"	v
+block_text	MarkDown/markdown.php	/^		$block_text	= "";	# Temporary text holder for current text.$/;"	v
+blocks	MarkDown/markdown.php	/^		$blocks = explode("\\t", $line);$/;"	v
+boundary	MarkDown/markdown.php	/^	function hashPart($text, $boundary = 'X') {$/;"	v
+bq	MarkDown/markdown.php	/^		$bq = $matches[1];$/;"	v
+bq	MarkDown/markdown.php	/^		$bq = $this->runBlockGamut($bq);		# recurse$/;"	v
+bq	MarkDown/markdown.php	/^		$bq = preg_replace('\/^[ ]*>[ ]?|^[ ]+$\/m', '', $bq);$/;"	v
+bq	MarkDown/markdown.php	/^		$bq = preg_replace('\/^\/m', "  ", $bq);$/;"	v
+bq	MarkDown/markdown.php	/^		$bq = preg_replace_callback('{(\\s*<pre>.+?<\/pre>)}sx', $/;"	v
+cSort	includes/ew_classement.php	/^          $cSort = (empty($this->sort)) || (! preg_match('!^id|nom|class|niveau|ttl|so$!', $this->sort)) ? 'niveau' : $this->sort;$/;"	v
+chars	MarkDown/markdown.php	/^		$chars = preg_split('\/(?<!^)(?!$)\/', $addr);$/;"	v
+class	MarkDown/markdown.php	/^				$class = $this->encodeAmpsAndAngles($class);$/;"	v
+class	MarkDown/markdown.php	/^				$class = $this->fn_backlink_class;$/;"	v
+class	MarkDown/markdown.php	/^				$class = $this->fn_link_class;$/;"	v
+class	MarkDown/markdown.php	/^				$class = str_replace('"', '&quot;', $class);$/;"	v
+clean_tags	MarkDown/markdown.php	/^	var $clean_tags = 'script|math';$/;"	v
+code	MarkDown/markdown.php	/^		$code = htmlspecialchars(trim($code), ENT_NOQUOTES);$/;"	v
+codeblock	MarkDown/markdown.php	/^		$codeblock = "<pre><code>$codeblock\\n<\/code><\/pre>";$/;"	v
+codeblock	MarkDown/markdown.php	/^		$codeblock = $matches[1];$/;"	v
+codeblock	MarkDown/markdown.php	/^		$codeblock = $this->outdent($codeblock);$/;"	v
+codeblock	MarkDown/markdown.php	/^		$codeblock = htmlspecialchars($codeblock, ENT_NOQUOTES);$/;"	v
+codeblock	MarkDown/markdown.php	/^		$codeblock = preg_replace('\/\\A\\n+|\\n+\\z\/', '', $codeblock);$/;"	v
+codespan	MarkDown/markdown.php	/^					$codespan = $this->makeCodeSpan($matches[1]);$/;"	v
+col_count	MarkDown/markdown.php	/^		$col_count	= count($headers);$/;"	v
+contain_span_tags	MarkDown/markdown.php	/^	var $contain_span_tags = 'p|h[1-6]|li|dd|dt|td|th|legend|address';$/;"	v
+content	MarkDown/markdown.php	/^		$content	= $matches[3];$/;"	v
+content	MarkDown/markdown.php	/^		$content	= preg_replace('\/[|] *$\/m', '', $content);$/;"	v
+content	MarkDown/markdown.php	/^		$content	= preg_replace('\/^ *[|]\/m', '', $content);$/;"	v
+content	MarkDown/markdown.php	/^		$content =$/;"	v
+content2	MarkDown/markdown.php	/^		$content2 = str_replace('\\2', '\\3', $content);$/;"	v
+context_block_tags	MarkDown/markdown.php	/^	var $context_block_tags = 'script|noscript|math|ins|del';$/;"	v
+convSecondes	includes/functions.php	/^function convSecondes($sec) {$/;"	f
+count	includes/ew_config.php	/^	public function count() {$/;"	f
+current	includes/ew_config.php	/^	public function current() {$/;"	f
+current_page	includes/ew_paginate.php	/^	protected $current_page=1;$/;"	v
+db	_init.php	/^  $db = new PDO('mysql:host='.$ew_config->SQL->host.';dbname='.$ew_config->SQL->base, $ew_config->SQL->login, $ew_config->SQL->password);$/;"	v
+def	MarkDown/markdown.php	/^			$def = "\\n". $def ."\\n";$/;"	v
+def	MarkDown/markdown.php	/^			$def = $this->runBlockGamut($this->outdent($def . "\\n\\n"));$/;"	v
+def	MarkDown/markdown.php	/^			$def = $this->runSpanGamut($this->outdent($def));$/;"	v
+def	MarkDown/markdown.php	/^			$def = rtrim($def);$/;"	v
+def	MarkDown/markdown.php	/^		$def			= $matches[2];$/;"	v
+depth	MarkDown/markdown.php	/^		$depth		= 0;	# Current depth inside the tag tree.$/;"	v
+depth	MarkDown/markdown.php	/^		$depth = 0;		# Current depth inside the tag tree.$/;"	v
+desc	MarkDown/markdown.php	/^				$desc = htmlspecialchars($desc, ENT_NOQUOTES);$/;"	v
+desc	MarkDown/markdown.php	/^			$desc = $this->abbr_desciptions[$abbr];$/;"	v
+detab	MarkDown/markdown.php	/^	function detab($text) {$/;"	f
+div_content	MarkDown/markdown.php	/^\/\/						$div_content = $this->$method($div_content);$/;"	v
+div_content	MarkDown/markdown.php	/^\/\/					$div_content = $this->hashHTMLBlocks($div_content);$/;"	v
+div_open	MarkDown/markdown.php	/^\/\/					$div_open = preg_replace($/;"	v
+doAbbreviations	MarkDown/markdown.php	/^	function doAbbreviations($text) {$/;"	f
+doAnchors	MarkDown/markdown.php	/^	function doAnchors($text) {$/;"	f
+doAutoLinks	MarkDown/markdown.php	/^	function doAutoLinks($text) {$/;"	f
+doBlockQuotes	MarkDown/markdown.php	/^	function doBlockQuotes($text) {$/;"	f
+doCodeBlocks	MarkDown/markdown.php	/^	function doCodeBlocks($text) {$/;"	f
+doDefLists	MarkDown/markdown.php	/^	function doDefLists($text) {$/;"	f
+doFootnotes	MarkDown/markdown.php	/^	function doFootnotes($text) {$/;"	f
+doHardBreaks	MarkDown/markdown.php	/^	function doHardBreaks($text) {$/;"	f
+doHeaders	MarkDown/markdown.php	/^	function doHeaders($text) {$/;"	f
+doHorizontalRules	MarkDown/markdown.php	/^	function doHorizontalRules($text) {$/;"	f
+doImages	MarkDown/markdown.php	/^	function doImages($text) {$/;"	f
+doItalicsAndBold	MarkDown/markdown.php	/^	function doItalicsAndBold($text) {$/;"	f
+doLists	MarkDown/markdown.php	/^	function doLists($text) {$/;"	f
+doTables	MarkDown/markdown.php	/^	function doTables($text) {$/;"	f
+document_gamut	MarkDown/markdown.php	/^	var $document_gamut = array($/;"	v
+does	MarkDown/markdown.php	/^	# hanlde UTF-8 if the default function does not exist.$/;"	f
+eb_config	_init.php	/^  $eb_config = new ew_config(parse_ini_file($ew_config->config_file,true));$/;"	v
+elements	includes/ew_paginate.php	/^	public $elements=0;$/;"	v
+empty_element_suffix	MarkDown/markdown.php	/^	var $empty_element_suffix = MARKDOWN_EMPTY_ELEMENT_SUFFIX;$/;"	v
+enclosing_tag	MarkDown/markdown.php	/^										$enclosing_tag = '', $span = false)$/;"	v
+encode	MarkDown/markdown.php	/^			if ($lite == '' && $encode == '')    $text = Markdown($text);$/;"	v
+encodeAmpsAndAngles	MarkDown/markdown.php	/^	function encodeAmpsAndAngles($text) {$/;"	f
+encodeEmailAddress	MarkDown/markdown.php	/^	function encodeEmailAddress($addr) {$/;"	f
+error_sql	includes/functions.php	/^function error_sql($error) {$/;"	f
+escape_chars	MarkDown/markdown.php	/^	var $escape_chars = '\\`*_{}[]()>#+-.!';$/;"	v
+est_unique	joueur.php	/^	$est_unique = ($objet['EstUnique'] == 'O') ? " class=\\"unique\\"":'';$/;"	v
+ew_classement	classement.php	/^    $ew_classement = new ew_classement($params, $tplList);$/;"	v
+ew_classement	includes/ew_classement.php	/^  class ew_classement {$/;"	c
+ew_classement	xml.php	/^    $ew_classement = new ew_classement($params, $tplList);$/;"	v
+ew_config	_init.php	/^  $ew_config = new ew_config(require 'config.inc.php',true);$/;"	v
+ew_config	includes/ew_config.php	/^class ew_config implements Countable, Iterator {$/;"	c
+ew_paginate	includes/ew_classement.php	/^      private $maxPersos; \/\/(Int) Nombre de personnage par page - la class ew_paginate doit dÈj‡ Ítre incluse.$/;"	c
+ew_paginate	includes/ew_paginate.php	/^class ew_paginate {$/;"	c
+fn_backlink_class	MarkDown/markdown.php	/^	var $fn_backlink_class = MARKDOWN_FN_BACKLINK_CLASS;$/;"	v
+fn_backlink_title	MarkDown/markdown.php	/^	var $fn_backlink_title = MARKDOWN_FN_BACKLINK_TITLE;$/;"	v
+fn_id_prefix	MarkDown/markdown.php	/^	var $fn_id_prefix = "";$/;"	v
+fn_link_class	MarkDown/markdown.php	/^	var $fn_link_class = MARKDOWN_FN_LINK_CLASS;$/;"	v
+fn_link_title	MarkDown/markdown.php	/^	var $fn_link_title = MARKDOWN_FN_LINK_TITLE;$/;"	v
+footnote	MarkDown/markdown.php	/^					$footnote = substr($footnote, 0, -4) . "&#160;$backlink<\/p>";$/;"	v
+footnote	MarkDown/markdown.php	/^				$footnote = $this->runBlockGamut("$footnote\\n");$/;"	v
+footnotes	MarkDown/markdown.php	/^	var $footnotes = array();$/;"	v
+footnotes_ordered	MarkDown/markdown.php	/^	var $footnotes_ordered = array();$/;"	v
+for	MarkDown/markdown.php	/^		$strlen = $this->utf8_strlen; # strlen function for UTF-8.$/;"	f
+for	MarkDown/markdown.php	/^	# Shortcut function for hashPart with block-level boundaries.$/;"	f
+for	MarkDown/markdown.php	/^	# String length function for detab. `_initDetab` will create a function to $/;"	f
+formParagraphs	MarkDown/markdown.php	/^	function formParagraphs($text) {$/;"	f
+ft	joueurs.php	/^$ft = $db->query($sql);$/;"	v
+get	includes/ew_config.php	/^	function get($key,$default=false) {$/;"	f
+getArrows	includes/ew_classement.php	/^      public function getArrows($sort) {$/;"	f
+getInfoByPerso	includes/functions.php	/^function getInfoByPerso ($perso) {$/;"	f
+getPersosList	includes/ew_classement.php	/^      public function getPersosList() {$/;"	f
+getURI	includes/ew_classement.php	/^      public function getURI() {$/;"	f
+getVars	includes/ew_classement.php	/^      public function getVars() {$/;"	f
+get_current_page	includes/ew_paginate.php	/^	public function get_current_page() {$/;"	f
+get_sql_limit_statement	includes/ew_paginate.php	/^	public function get_sql_limit_statement() {$/;"	f
+gives	MarkDown/markdown.php	/^	# element in the text stream. Passing $text to through this function gives$/;"	f
+graf	MarkDown/markdown.php	/^				$graf = $block;$/;"	v
+graf	MarkDown/markdown.php	/^				$graf = $value;$/;"	v
+graf	MarkDown/markdown.php	/^\/\/					$graf = $div_open . "\\n" . $div_content . "\\n" . $div_close;$/;"	v
+grafs	MarkDown/markdown.php	/^		$grafs = preg_split('\/\\n{2,}\/', $text, -1, PREG_SPLIT_NO_EMPTY);$/;"	v
+handleSpanToken	MarkDown/markdown.php	/^	function handleSpanToken($token, &$str) {$/;"	f
+hashBlock	MarkDown/markdown.php	/^	function hashBlock($text) {$/;"	f
+hashClean	MarkDown/markdown.php	/^	function hashClean($text) {$/;"	f
+hashHTMLBlocks	MarkDown/markdown.php	/^	function hashHTMLBlocks($text) {$/;"	f
+hashPart	MarkDown/markdown.php	/^	function hashPart($text, $boundary = 'X') {$/;"	f
+head	MarkDown/markdown.php	/^		$head		= $matches[1];$/;"	v
+head	MarkDown/markdown.php	/^		$head		= $this->parseSpan($head);$/;"	v
+head	MarkDown/markdown.php	/^		$head		= preg_replace('\/[|] *$\/m', '', $head);$/;"	v
+headers	MarkDown/markdown.php	/^		$headers	= preg_split('\/ *[|] *\/', $head);$/;"	v
+html_hashes	MarkDown/markdown.php	/^	var $html_hashes = array();$/;"	v
+i	MarkDown/markdown.php	/^		static $i = 0;$/;"	v
+i	includes/ew_paginate.php	/^			$i=1;$/;"	v
+identify_modifier_markdown	MarkDown/markdown.php	/^function identify_modifier_markdown() {$/;"	f
+in	MarkDown/markdown.php	/^	# Check for the availability of the function in the `utf8_strlen` property$/;"	f
+in_anchor	MarkDown/markdown.php	/^	var $in_anchor = false;$/;"	v
+in_footnote	MarkDown/markdown.php	/^	var $in_footnote = false;$/;"	v
+indent	MarkDown/markdown.php	/^					$indent = strlen($matches[1]);$/;"	v
+indent	MarkDown/markdown.php	/^	function _hashHTMLBlocks_inMarkdown($text, $indent = 0, $/;"	v
+info	joueur.php	/^$info = getInfoByPerso(urldecode ($_GET['Nom']) );$/;"	v
+insert	MarkDown/markdown.php	/^	# Called whenever a tag must be hashed when a function insert a "clean" tag$/;"	f
+insert	MarkDown/markdown.php	/^	# Called whenever a tag must be hashed when a function insert an atomic $/;"	f
+is	MarkDown/markdown.php	/^	# (initially `mb_strlen`). If the function is not available, create a $/;"	f
+is_p	MarkDown/markdown.php	/^			$is_p = !preg_match('\/^B\\x1A[0-9]+B|^C\\x1A[0-9]+C$\/', $value);$/;"	v
+item	MarkDown/markdown.php	/^			$item = $this->doLists($this->outdent($item));$/;"	v
+item	MarkDown/markdown.php	/^			$item = $this->runBlockGamut($this->outdent($item)."\\n");$/;"	v
+item	MarkDown/markdown.php	/^			$item = $this->runSpanGamut($item);$/;"	v
+item	MarkDown/markdown.php	/^			$item = preg_replace('\/\\n+$\/', '', $item);$/;"	v
+item	MarkDown/markdown.php	/^		$item = $matches[4];$/;"	v
+items	includes/ew_classement.php	/^              $items = '';$/;"	v
+key	MarkDown/markdown.php	/^		$key  = $this->hashBlock($text);$/;"	v
+key	MarkDown/markdown.php	/^		$key = "$boundary\\x1A" . ++$i . $boundary;$/;"	v
+key	MarkDown/markdown.php	/^		foreach ($chars as $key => $char) {$/;"	v
+key	MarkDown/markdown.php	/^		foreach ($grafs as $key => $value) {$/;"	v
+key	includes/ew_config.php	/^		foreach ($array as $key => $value) {$/;"	v
+key	includes/ew_config.php	/^		foreach ($merge as $key => $value) {$/;"	v
+key	includes/ew_config.php	/^	public function key() {$/;"	f
+leading_line	MarkDown/markdown.php	/^		$leading_line	= $matches[1];$/;"	v
+leading_line	MarkDown/markdown.php	/^		$leading_line =& $matches[1];$/;"	v
+leading_space	MarkDown/markdown.php	/^		$leading_space =& $matches[2];$/;"	v
+less_than_tab	MarkDown/markdown.php	/^		$less_than_tab = $this->tab_width - 1;$/;"	v
+level	MarkDown/markdown.php	/^		$level = $matches[2]{0} == '=' ? 1 : 2;$/;"	v
+level	MarkDown/markdown.php	/^		$level = $matches[3]{0} == '=' ? 1 : 2;$/;"	v
+level	MarkDown/markdown.php	/^		$level = strlen($matches[1]);$/;"	v
+limit_by_page	includes/ew_paginate.php	/^	public $limit_by_page=10;$/;"	v
+line	MarkDown/markdown.php	/^		$line = $blocks[0];$/;"	v
+line	MarkDown/markdown.php	/^		$line = $matches[0];$/;"	v
+lines	includes/ew_paginate.php	/^		$lines = $this->limit_by_page;$/;"	v
+link	MarkDown/markdown.php	/^		$link = "<a href=\\"$url\\">$url<\/a>";$/;"	v
+link	MarkDown/markdown.php	/^		$link = $this->encodeEmailAddress($address);$/;"	v
+link_id	MarkDown/markdown.php	/^			$link_id = $link_text;$/;"	v
+link_id	MarkDown/markdown.php	/^			$link_id = strtolower($alt_text); # for shortcut links like ![this][].$/;"	v
+link_id	MarkDown/markdown.php	/^		$link_id     = strtolower($matches[3]);$/;"	v
+link_id	MarkDown/markdown.php	/^		$link_id     =& $matches[3];$/;"	v
+link_id	MarkDown/markdown.php	/^		$link_id = preg_replace('{[ ]?\\n}', ' ', $link_id);$/;"	v
+link_id	MarkDown/markdown.php	/^		$link_id = strtolower($link_id);$/;"	v
+link_id	MarkDown/markdown.php	/^		$link_id = strtolower($matches[1]);$/;"	v
+link_text	MarkDown/markdown.php	/^			$link_text = $this->runSpanGamut($link_text);$/;"	v
+link_text	MarkDown/markdown.php	/^		$link_text		=  $this->runSpanGamut($matches[2]);$/;"	v
+link_text	MarkDown/markdown.php	/^		$link_text   =  $matches[2];$/;"	v
+link_text	MarkDown/markdown.php	/^		$link_text = $this->runSpanGamut($link_text);$/;"	v
+list	MarkDown/markdown.php	/^		$list = $matches[1];$/;"	v
+list_level	MarkDown/markdown.php	/^	var $list_level = 0;$/;"	v
+list_str	MarkDown/markdown.php	/^		$list_str = preg_replace("\/\\n{2,}\\\\z\/", "\\n", $list_str);$/;"	v
+list_str	MarkDown/markdown.php	/^		$list_str = preg_replace_callback('{$/;"	v
+list_type	MarkDown/markdown.php	/^		$list_type = preg_match("\/$marker_ul\/", $matches[3]) ? "ul" : "ol";$/;"	v
+lite	MarkDown/markdown.php	/^		function TextileRestricted($text, $lite='', $noimage='') {$/;"	v
+lite	MarkDown/markdown.php	/^		function TextileThis($text, $lite='', $encode='') {$/;"	v
+loadDB	includes/ew_classement.php	/^      public function loadDB($db) {$/;"	f
+makeCodeSpan	MarkDown/markdown.php	/^	function makeCodeSpan($code) {$/;"	f
+markdown_attr_match	MarkDown/markdown.php	/^		$markdown_attr_match = '$/;"	v
+marker_any	MarkDown/markdown.php	/^		$marker_any = "(?:$marker_ul|$marker_ol)";$/;"	v
+marker_any	MarkDown/markdown.php	/^		$marker_any = ( $list_type == "ul" ? $marker_ul : $marker_ol );$/;"	v
+marker_ol	MarkDown/markdown.php	/^		$marker_ol  = '\\d+[.]';$/;"	v
+marker_ul	MarkDown/markdown.php	/^		$marker_ul  = '[*+-]';$/;"	v
+markers	MarkDown/markdown.php	/^		$markers = array($marker_ul, $marker_ol);$/;"	v
+mdwp_add_p	MarkDown/markdown.php	/^	function mdwp_add_p($text) {$/;"	f
+mdwp_hidden_tags	MarkDown/markdown.php	/^		$mdwp_hidden_tags = explode(' ',$/;"	v
+mdwp_hide_tags	MarkDown/markdown.php	/^	function mdwp_hide_tags($text) {$/;"	f
+mdwp_placeholders	MarkDown/markdown.php	/^		$mdwp_placeholders = explode(' ', str_rot13($/;"	v
+mdwp_show_tags	MarkDown/markdown.php	/^	function mdwp_show_tags($text) {$/;"	f
+mdwp_strip_p	MarkDown/markdown.php	/^	function mdwp_strip_p($t) { return preg_replace('{<\/?p>}i', '', $t); }$/;"	f
+merge	includes/ew_config.php	/^	public function merge(ew_config $merge) {$/;"	f
+method	MarkDown/markdown.php	/^		foreach ($this->block_gamut as $method => $priority) {$/;"	v
+method	MarkDown/markdown.php	/^		foreach ($this->document_gamut as $method => $priority) {$/;"	v
+method	MarkDown/markdown.php	/^		foreach ($this->span_gamut as $method => $priority) {$/;"	v
+method	MarkDown/markdown.php	/^\/\/					foreach ($this->document_gamut as $method => $priority) {$/;"	v
+n	MarkDown/markdown.php	/^			foreach ($row_cells as $n => $cell)$/;"	v
+n	MarkDown/markdown.php	/^		foreach ($headers as $n => $header)$/;"	v
+n	MarkDown/markdown.php	/^		foreach ($separators as $n => $s) {$/;"	v
+nbPerso	includes/ew_classement.php	/^              $nbPerso    = $result->fetch(PDO::FETCH_NUM);$/;"	v
+nested_brackets_depth	MarkDown/markdown.php	/^	var $nested_brackets_depth = 6;$/;"	v
+nested_tags_level	MarkDown/markdown.php	/^		$nested_tags_level = 4;$/;"	v
+nested_url_parenthesis_depth	MarkDown/markdown.php	/^	var $nested_url_parenthesis_depth = 4;$/;"	v
+newline	MarkDown/markdown.php	/^				$newline = "$void\\n";$/;"	v
+newline_match_after	MarkDown/markdown.php	/^		$newline_match_after = $/;"	v
+newline_match_before	MarkDown/markdown.php	/^		$newline_match_before = '\/(?:^\\n?|\\n\\n)*$\/';$/;"	v
+next	includes/ew_config.php	/^	public function next() {$/;"	f
+no_entities	MarkDown/markdown.php	/^	var $no_entities = false;$/;"	v
+no_markup	MarkDown/markdown.php	/^	var $no_markup = false;$/;"	v
+node_id	MarkDown/markdown.php	/^		$node_id = $this->fn_id_prefix . $matches[1];$/;"	v
+note_id	MarkDown/markdown.php	/^			foreach ($this->footnotes_ordered as $note_id => $footnote) {$/;"	v
+note_id	MarkDown/markdown.php	/^		$note_id = $this->fn_id_prefix . $matches[1];$/;"	v
+num	MarkDown/markdown.php	/^			$num = 0;$/;"	v
+num	MarkDown/markdown.php	/^			$num = count($this->footnotes_ordered);$/;"	v
+num	joueurs.php	/^$num = $ft->fetch(PDO::FETCH_ASSOC);$/;"	v
+offset	includes/ew_paginate.php	/^		$offset = $this->limit_by_page*($this->current_page-1);$/;"	v
+ord	MarkDown/markdown.php	/^			$ord = ord($char);$/;"	v
+orderBy	includes/ew_classement.php	/^                      $orderBy = '`Class` %1$s';$/;"	v
+orderBy	includes/ew_classement.php	/^                      $orderBy = '`Id_Personnages` %1$s';$/;"	v
+orderBy	includes/ew_classement.php	/^                      $orderBy = '`Level` %1$s, `Next` %2$s';$/;"	v
+orderBy	includes/ew_classement.php	/^                      $orderBy = '`Next` %1$s';$/;"	v
+orderBy	includes/ew_classement.php	/^                      $orderBy = '`Nom` %1$s';$/;"	v
+orderBy	includes/ew_classement.php	/^                      $orderBy = '`SommeObjets` %1$s';$/;"	v
+orderBy	includes/ew_classement.php	/^              $orderBy = sprintf($orderBy, ($this->order == 'asc' ? 'ASC' : 'DESC'), ($this->order == 'asc' ? 'DESC' : 'ASC')); $/;"	v
+original_text	MarkDown/markdown.php	/^		$original_text = $text;		# Save original text in case of faliure.$/;"	v
+outdent	MarkDown/markdown.php	/^	function outdent($text) {$/;"	f
+output	MarkDown/markdown.php	/^		$output = '';$/;"	v
+p_row	show_config.php	/^function p_row($explain,$value,$iscode=false) {$/;"	f
+page_variable	includes/ew_paginate.php	/^	protected $page_variable="p";$/;"	v
+pages	includes/ew_classement.php	/^                  $pages      = new ew_paginate($nbPerso[0], $this->maxPersos);$/;"	v
+pages	joueurs.php	/^$pages = new ew_paginate($num['elems'],$ew_config->users_by_page);$/;"	v
+pageurl	includes/ew_paginate.php	/^                     $pageurl = strpos($pageurl, '?') ? $pageurl.'&amp;' : $pageurl.'?';$/;"	v
+paginate	includes/ew_paginate.php	/^	public function paginate($pageurl) {$/;"	f
+pagination	includes/ew_classement.php	/^                  $pagination = $pages->paginate($this->getURI());$/;"	v
+params	includes/ew_classement.php	/^          if (! is_array($params))  $params  = array();$/;"	v
+parseSpan	MarkDown/markdown.php	/^	function parseSpan($str) {$/;"	f
+parsed	MarkDown/markdown.php	/^		$parsed		= "";	# Parsed text that will be returned.$/;"	v
+parsed	MarkDown/markdown.php	/^		$parsed = "";	# Parsed text that will be returned.$/;"	v
+parser	MarkDown/markdown.php	/^		$parser = new $parser_class;$/;"	v
+parser_class	MarkDown/markdown.php	/^		$parser_class = MARKDOWN_PARSER_CLASS;$/;"	v
+parts	MarkDown/markdown.php	/^			$parts = preg_split($block_tag_match, $text, 2, $/;"	v
+parts	MarkDown/markdown.php	/^			$parts = preg_split($regex, $str, 2, PREG_SPLIT_DELIM_CAPTURE);$/;"	v
+parts	MarkDown/markdown.php	/^			$parts = preg_split($tag_match, $text, 2, PREG_SPLIT_DELIM_CAPTURE);$/;"	v
+pid	joueur.php	/^$pid = $info['Id_Personnages'];$/;"	v
+pre	MarkDown/markdown.php	/^		$pre = $matches[1];$/;"	v
+pre	MarkDown/markdown.php	/^		$pre = preg_replace('\/^  \/m', '', $pre);$/;"	v
+processDefListItems	MarkDown/markdown.php	/^	function processDefListItems($list_str) {$/;"	f
+processListItems	MarkDown/markdown.php	/^	function processListItems($list_str, $marker_any) {$/;"	f
+query	includes/ew_classement.php	/^              $query      = 'SELECT COUNT(*) as `elems` FROM `'.$this->prefix.'Personnages`';$/;"	v
+query	includes/ew_classement.php	/^              $query = 'SELECT `Id_Personnages`, `Nom`, `Class`, `p`.`Level`, `Next`, SUM(`o`.`Level`) AS `SommeObjets`$/;"	v
+query	includes/functions.php	/^		$query = "SELECT Nick, UserHost FROM IRC WHERE Pers_Id = :Perso_id";$/;"	v
+query	includes/functions.php	/^	$query = "SELECT p.* FROM Personnages as p WHERE p.Nom = :Nom";$/;"	v
+query	joueur.php	/^$query = "SELECT o.LObj_Id, o.Level, lo.Name, lo.EstUnique FROM Objets as o, ListeObjets as lo WHERE o.Pers_Id=:Perso_id AND lo.Id_ListeObjets = o.LObj_Id";$/;"	v
+r	MarkDown/markdown.php	/^				$r = ($seed * (1 + $key)) % 100; # Pseudo-random function.$/;"	v
+r2	includes/functions.php	/^		$r2 = $st->fetch(PDO::FETCH_ASSOC);$/;"	v
+regex	MarkDown/markdown.php	/^		$regex = '{$/;"	v
+replace	includes/ew_classement.php	/^          $replace = array($/;"	v
+replaceItems	includes/ew_classement.php	/^                  $replaceItems = array($row['Id_Personnages'], htmlentities($row['Nom']), htmlentities($row['Class']), $row['Level'], $secondes, $row['SommeObjets']);$/;"	v
+res	show_config.php	/^	$res =  $tab.'<div class="row">'."\\n\\t".$/;"	v
+result	MarkDown/markdown.php	/^			$result = "<a href=\\"$url\\"";$/;"	v
+result	MarkDown/markdown.php	/^			$result = "<img src=\\"$url\\" alt=\\"$alt_text\\"";$/;"	v
+result	MarkDown/markdown.php	/^			$result = $this->hashPart($result);$/;"	v
+result	MarkDown/markdown.php	/^			$result = $whole_match;$/;"	v
+result	MarkDown/markdown.php	/^		$result = "<a href=\\"$url\\"";$/;"	v
+result	MarkDown/markdown.php	/^		$result = "<dl>\\n" . $result . "\\n<\/dl>";$/;"	v
+result	MarkDown/markdown.php	/^		$result = "<img src=\\"$url\\" alt=\\"$alt_text\\"";$/;"	v
+result	MarkDown/markdown.php	/^		$result = $this->hashBlock("<$list_type>\\n" . $result . "<\/$list_type>");$/;"	v
+result	MarkDown/markdown.php	/^		$result = $this->processListItems($list, $marker_any);$/;"	v
+result	MarkDown/markdown.php	/^		$result = trim($this->processDefListItems($list));$/;"	v
+result	includes/ew_classement.php	/^              $result     = $this->db->query($query);$/;"	v
+result	includes/functions.php	/^			$result = array_merge($result,$r2);$/;"	v
+result	includes/functions.php	/^			$result = array_merge($result,array('Nick'=>'<strong>&lt;&lt;offline&gt;&gt;<\/strong>','UserHost'=>''));$/;"	v
+result	includes/functions.php	/^	$result = $sth->fetch(PDO::FETCH_ASSOC);$/;"	v
+return	includes/ew_classement.php	/^          $return  = ' ';$/;"	v
+return	includes/ew_classement.php	/^          $return  = str_ireplace($search, $replace, $this->tplList['start']."\\n".$items.$this->tplList['end']);$/;"	v
+rewind	includes/ew_config.php	/^	public function rewind() {$/;"	f
+row	MarkDown/markdown.php	/^			$row = $this->parseSpan($row);$/;"	v
+row_cells	MarkDown/markdown.php	/^			$row_cells = array_pad($row_cells, $col_count, '');$/;"	v
+row_cells	MarkDown/markdown.php	/^			$row_cells = preg_split('\/ *[|] *\/', $row, $col_count);$/;"	v
+rows	MarkDown/markdown.php	/^		$rows = explode("\\n", trim($content, "\\n"));$/;"	v
+runBasicBlockGamut	MarkDown/markdown.php	/^	function runBasicBlockGamut($text) {$/;"	f
+runBlockGamut	MarkDown/markdown.php	/^	function runBlockGamut($text) {$/;"	f
+runSpanGamut	MarkDown/markdown.php	/^	function runSpanGamut($text) {$/;"	f
+s	joueurs.php	/^	$s = convSecondes($row["Next"]);$/;"	v
+search	includes/ew_classement.php	/^          $search  = array('{title}', '{nbpersos}', '{persos}', '{pagination}', '{pages}', '{aid}', '{anom}', '{aclass}', '{aniveau}', '{attl}', '{aso}');$/;"	v
+searchItems	includes/ew_classement.php	/^                  $searchItems  = array('{id}', '{nom}', '{class}', '{niveau}', '{ttl}', '{so}');$/;"	v
+secondes	includes/ew_classement.php	/^                  $secondes = convSecondes($row['Next']);$/;"	v
+seed	MarkDown/markdown.php	/^		$seed = (int)abs(crc32($addr) \/ strlen($addr)); # Deterministic seed.$/;"	v
+separators	MarkDown/markdown.php	/^		$separators	= preg_split('\/ *[|] *\/', $underline);$/;"	v
+set_current_page	includes/ew_paginate.php	/^	protected function set_current_page() {$/;"	f
+since	MarkDown/markdown.php	/^		# begining in the Markdown function since hashed blocks can be part of$/;"	f
+smarty_modifier_markdown	MarkDown/markdown.php	/^function smarty_modifier_markdown($text) {$/;"	f
+sort	includes/ew_classement.php	/^                      $sort    = 'niveau';$/;"	v
+span_gamut	MarkDown/markdown.php	/^	var $span_gamut = array($/;"	v
+span_mode	MarkDown/markdown.php	/^					$span_mode = $this->mode == 'span' || $this->mode != 'block' &&$/;"	v
+sql	joueurs.php	/^$sql = "SELECT COUNT(*) as elems FROM Personnages";$/;"	v
+sql	joueurs.php	/^$sql = "SELECT p.Nom, p.Class, p.Level, p.Next, SUM( o.Level ) AS 'puissance_totale'$/;"	v
+st	includes/functions.php	/^		$st = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));$/;"	v
+sth	includes/functions.php	/^	$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));$/;"	v
+sth	joueur.php	/^$sth = $db->prepare($query, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY, PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => TRUE));$/;"	v
+str	MarkDown/markdown.php	/^					$str = $matches[2];$/;"	v
+str	MarkDown/markdown.php	/^				$str = $parts[2];$/;"	v
+stripAbbreviations	MarkDown/markdown.php	/^	function stripAbbreviations($text) {$/;"	f
+stripFootnotes	MarkDown/markdown.php	/^	function stripFootnotes($text) {$/;"	f
+stripLinkDefinitions	MarkDown/markdown.php	/^	function stripLinkDefinitions($text) {$/;"	f
+strlen	MarkDown/markdown.php	/^		$strlen = $this->utf8_strlen; # strlen function for UTF-8.$/;"	v
+tab	show_config.php	/^	$tab='';$/;"	v
+tab_width	MarkDown/markdown.php	/^	var $tab_width = MARKDOWN_TAB_WIDTH;$/;"	v
+tag	MarkDown/markdown.php	/^					$tag = preg_replace($markdown_attr_match, '', $tag);$/;"	v
+tag	MarkDown/markdown.php	/^			$tag         = $parts[1]; # Tag to handle.$/;"	v
+tag	MarkDown/markdown.php	/^			$tag  = $parts[1]; # Tag to handle.$/;"	v
+tag_match	MarkDown/markdown.php	/^		$tag_match = '{$/;"	v
+tag_name	MarkDown/markdown.php	/^					$tag_name = $matches[1];$/;"	v
+tailing_blank_line	MarkDown/markdown.php	/^		$tailing_blank_line =& $matches[5];$/;"	v
+term	MarkDown/markdown.php	/^			$term = $this->runSpanGamut(trim($term));$/;"	v
+terms	MarkDown/markdown.php	/^		$terms = explode("\\n", trim($matches[1]));$/;"	v
+text	MarkDown/markdown.php	/^					$text = $tag . $text;$/;"	v
+text	MarkDown/markdown.php	/^				$text = "";$/;"	v
+text	MarkDown/markdown.php	/^				$text = preg_replace_callback('{$/;"	v
+text	MarkDown/markdown.php	/^				$text = substr($tag, 1) . $text; # Put back $tag minus first char.$/;"	v
+text	MarkDown/markdown.php	/^			$text        = $parts[2]; # Remaining text after current tag.$/;"	v
+text	MarkDown/markdown.php	/^			$text = $parts[2]; # Remaining text after current tag.$/;"	v
+text	MarkDown/markdown.php	/^			$text = $this->$method($text);$/;"	v
+text	MarkDown/markdown.php	/^			$text = '<p>'.$text.'<\/p>';$/;"	v
+text	MarkDown/markdown.php	/^			$text = preg_replace('{\\[\\^(.+?)\\]}', "F\\x1Afn:\\\\1\\x1A:", $text);$/;"	v
+text	MarkDown/markdown.php	/^			$text = preg_replace('{\\n{2,}}', "<\/p>\\n\\n<p>", $text);$/;"	v
+text	MarkDown/markdown.php	/^			$text = preg_replace_callback('{'.$/;"	v
+text	MarkDown/markdown.php	/^			$text = str_replace('&', '&amp;', $text);$/;"	v
+text	MarkDown/markdown.php	/^			$text = str_replace('<', '&lt;', $text);$/;"	v
+text	MarkDown/markdown.php	/^			if (function_exists('SmartyPants'))  $text = SmartyPants($text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = "<table>\\n";$/;"	v
+text	MarkDown/markdown.php	/^		$text = $matches[1];$/;"	v
+text	MarkDown/markdown.php	/^		$text = $matches[2];$/;"	v
+text	MarkDown/markdown.php	/^		$text = $this->detab($text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = $this->formParagraphs($text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = $this->hashHTMLBlocks($text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = $this->runSpanGamut($text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = $this->unhash($text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = '';$/;"	v
+text	MarkDown/markdown.php	/^		$text = implode("\\n\\n", $grafs);$/;"	v
+text	MarkDown/markdown.php	/^		$text = implode('', array_slice($chars, 7)); # text without `mailto:`$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace('\/&(?!#?[xX]?(?:[0-9a-fA-F]+|\\w+);)\/', $/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace('\/\\A\\n+|\\n+\\z\/', '', $text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace('\/^[ ]+$\/m', '', $text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace('{<(?![a-z\/?\\$!%])}i', '&lt;', $text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace('{\\r\\n?}', "\\n", $text);$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback($/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('\/$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('\/^.*\\t.*$\/m',$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('{ ^(.+?)[ ]*\\n(=+|-+)[ ]*\\n+ }mx',$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('{$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('{(?>$/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('{<((https?|ftp|dict):[^\\'">\\s]+)>}', $/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback('{F\\x1Afn:(.*?)\\x1A:}', $/;"	v
+text	MarkDown/markdown.php	/^		$text = preg_replace_callback(array($/;"	v
+text	MarkDown/markdown.php	/^\/\/		$text = preg_replace_callback('{$/;"	v
+text	index.php	/^$text = <<<EOF$/;"	v
+that	MarkDown/markdown.php	/^	# function that will loosely count the number of UTF-8 characters with a$/;"	f
+title	MarkDown/markdown.php	/^				$title = $this->encodeAmpsAndAngles($title);$/;"	v
+title	MarkDown/markdown.php	/^				$title = $this->fn_backlink_title;$/;"	v
+title	MarkDown/markdown.php	/^				$title = $this->fn_link_title;$/;"	v
+title	MarkDown/markdown.php	/^				$title = $this->titles[$link_id];$/;"	v
+title	MarkDown/markdown.php	/^				$title = str_replace('"', '&quot;', $title);$/;"	v
+title	MarkDown/markdown.php	/^			$title = $this->encodeAmpsAndAngles($title);$/;"	v
+title	MarkDown/markdown.php	/^			$title = str_replace('"', '&quot;', $title);$/;"	v
+title	MarkDown/markdown.php	/^		$title			=& $matches[7];$/;"	v
+title	classement.php	/^    $title         = $ew_classement->title;$/;"	v
+title	index.php	/^$title = "Accueil";$/;"	v
+title	joueur.php	/^$title = 'Information du joueur '.$_GET['Nom'];$/;"	v
+title	joueurs.php	/^$title = 'Liste des joueurs';$/;"	v
+title	show_config.php	/^$title = "Show config";$/;"	v
+title	stats.php	/^$title = "Statistiques";$/;"	v
+titles	MarkDown/markdown.php	/^	var $titles = array();$/;"	v
+total	joueur.php	/^$total = 0;$/;"	v
+transform	MarkDown/markdown.php	/^	function transform($text) {$/;"	f
+txt	includes/ew_paginate.php	/^			$txt = ($this->current_page === 1) ? '' : '&lt; <a href="'.$pageurl.$this->page_variable.'='.($this->current_page-1).'">pr√©c√©dent<\/a> | ';$/;"	v
+underline	MarkDown/markdown.php	/^		$underline	= $matches[2];$/;"	v
+underline	MarkDown/markdown.php	/^		$underline	= preg_replace('\/[|] *$\/m', '', $underline);$/;"	v
+unhash	MarkDown/markdown.php	/^	function unhash($text) {$/;"	f
+uri	includes/ew_classement.php	/^          $uri   = $_SERVER['SCRIPT_NAME'];$/;"	v
+url	MarkDown/markdown.php	/^			$url = $this->encodeAmpsAndAngles($url);$/;"	v
+url	MarkDown/markdown.php	/^			$url = $this->urls[$link_id];$/;"	v
+url	MarkDown/markdown.php	/^		$url			=  $matches[3] == '' ? $matches[4] : $matches[3];$/;"	v
+url	MarkDown/markdown.php	/^		$url			= $matches[3] == '' ? $matches[4] : $matches[3];$/;"	v
+url	MarkDown/markdown.php	/^		$url = $this->encodeAmpsAndAngles($matches[1]);$/;"	v
+url	MarkDown/markdown.php	/^		$url = $this->encodeAmpsAndAngles($url);$/;"	v
+urls	MarkDown/markdown.php	/^	var $urls = array();$/;"	v
+utf8_strlen	MarkDown/markdown.php	/^	var $utf8_strlen = 'mb_strlen';$/;"	v
+valid	includes/ew_config.php	/^	public function valid() {$/;"	f
+value	MarkDown/markdown.php	/^				$value = "<p>$value<\/p>";$/;"	v
+value	MarkDown/markdown.php	/^				$value = $this->runSpanGamut($value);$/;"	v
+value	MarkDown/markdown.php	/^				$value = preg_replace('\/^([ ]*)\/', "<p>", $value);$/;"	v
+value	MarkDown/markdown.php	/^			$value = trim($this->runSpanGamut($value));$/;"	v
+value	show_config.php	/^		$value = '<code>'.htmlentities($value).'<\/code>';$/;"	v
+vars	includes/ew_classement.php	/^          $vars = $this->getVars();$/;"	v
+void	MarkDown/markdown.php	/^				$void = $this->hashPart("", ':');$/;"	v
+whole_list	MarkDown/markdown.php	/^			$whole_list = '$/;"	v
+whole_list	MarkDown/markdown.php	/^		$whole_list = '(?>$/;"	v
+whole_match	MarkDown/markdown.php	/^		$whole_match	=  $matches[1];$/;"	v
+whole_match	MarkDown/markdown.php	/^		$whole_match	= $matches[1];$/;"	v
+whole_match	MarkDown/markdown.php	/^		$whole_match =  $matches[1];$/;"	v
+whole_match	MarkDown/markdown.php	/^		$whole_match = $matches[1];$/;"	v

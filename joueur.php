@@ -3,6 +3,7 @@ if (!isset($_GET['Nom']) || empty($_GET['Nom'])) {
 	die('tatata');
 }
 $title = 'Information du joueur '.$_GET['Nom'];
+require 'includes/prepend.php';
 require 'templates/header.tpl.php';
 
 $info = getInfoByPerso(urldecode ($_GET['Nom']) );
