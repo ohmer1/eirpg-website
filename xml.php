@@ -1,5 +1,5 @@
 <?php
-    require_once 'includes/prepend.php';
+    require_once '_init.php';
     require_once 'includes/ew_paginate.php';
     require_once 'includes/ew_classement.php';
 

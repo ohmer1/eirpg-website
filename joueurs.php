@@ -1,9 +1,8 @@
 <?php
 $title = 'Liste des joueurs';
 
-require 'includes/prepend.php';
-require 'templates/header.tpl.php';
-require 'includes/ew_paginate.php';
+require('_header.php');
+require('includes/ew_paginate.php');
 
 ?>
 <h1>Liste des joueurs</h1>
@@ -20,7 +19,7 @@ echo "<ul>\n";
 
 $sql = "SELECT p.Nom, p.Class, p.Level, p.Next, SUM( o.Level ) AS 'puissance_totale'
 FROM Personnages AS p
-LEFT JOIN Objets AS o ON ( p.Id_Personnages = o.Pers_Id )
+LEFT JOIN Objets AS o ON ( p.Id_Personnages = o.Pers_Id ) 
 GROUP BY p.Id_Personnages
 ORDER BY p.Id_Personnages ASC\n".$pages->get_sql_limit_statement();
 //$query = "SELECT Nom, Class, Level, Next FROM Personnages ORDER BY Id_Personnages ASC ".$pages->get_sql_limit_statement();
@@ -36,5 +35,5 @@ Nombre de joueurs : <?php echo $num['elems'] ?>
 </p>
 <div>
 <?php
-require 'templates/footer.tpl.php';
+require('_footer.php');
 ?>
